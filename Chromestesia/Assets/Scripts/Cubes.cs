@@ -1,0 +1,44 @@
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public class Cubes : MonoBehaviour
+{
+   
+
+    public GameObject greenDoor, purplePlatform, toDestroy, toEnable;
+    // Start is called before the first frame update
+    void Start()
+    {
+        toDestroy.SetActive(true);
+        toEnable.SetActive(false);
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
+
+    }
+
+    void OnCollisionEnter(Collision other)
+    {
+        if (other.gameObject.tag == "GreenSphere")
+        {
+            greenDoor.GetComponent<GreenDoor>().go = true;
+
+        }
+
+        if (other.gameObject.tag == "PurpleSphere")
+        {
+            purplePlatform.GetComponent<Platform>().go = !purplePlatform.GetComponent<Platform>().go;
+
+        }
+
+        if (other.gameObject.tag == "CyanSphere")
+        {
+            toDestroy.SetActive(false);
+            toEnable.SetActive(true);
+
+        }
+    }
+}
