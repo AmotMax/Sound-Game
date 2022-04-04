@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 7301339947447573116}
   - component: {fileID: 7301339947447573117}
   - component: {fileID: 7301339947447573118}
+  - component: {fileID: 7340448644209419625}
   m_Layer: 0
   m_Name: WavePurple
   m_TagString: Untagged
@@ -103,3 +104,17 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &7340448644209419625
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7301339947447573119}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3b5c63d6eca11cc4483768ed3149d863, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  initialTime: 1.4
+  timer: 0

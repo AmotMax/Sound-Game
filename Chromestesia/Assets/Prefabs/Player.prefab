@@ -144,6 +144,7 @@ GameObject:
   - component: {fileID: 4416951911074446765}
   - component: {fileID: 4416951911074446764}
   - component: {fileID: 6834113010905360413}
+  - component: {fileID: 2600443141012818448}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -195,7 +196,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: f4cdab4a0e2b639439a68d963a58a5f4, type: 2}
+  - {fileID: 2100000, guid: 76ee59e2f1026f24ea1f41f9afd12d8a, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -258,15 +259,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4aee84c0c6f762f4190f5524ad31f2a5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  soundHandler1: {fileID: 0}
-  soundHandler2: {fileID: 0}
-  soundHandler3: {fileID: 0}
-  soundHandler4: {fileID: 0}
-  soundHandler5: {fileID: 0}
+  soundHandler: {fileID: 0}
   "r\xE9": {fileID: 1183293411818197756, guid: f41218c3a1c66a540b495e0da88df70a, type: 3}
   fa: {fileID: 7137209533765954897, guid: 118573fff5a387e48a71cb6642652779, type: 3}
   la: {fileID: 7594454498265110967, guid: 3553c59853b7e4244ae2b477e17e916d, type: 3}
   "r\xE92": {fileID: 1533706921813112563, guid: 4949bfbf1776db446957f47846ec6a72, type: 3}
+  resetSound: {fileID: 1113405145858069462, guid: 1f5b2515b4f189e4f9780ff54c63a470, type: 3}
   A: 0
   B: 0
   C: 0
@@ -275,6 +273,11 @@ MonoBehaviour:
   is2: 0
   is3: 0
   is4: 0
+  is5: 0
+  greenPP: {fileID: 0}
+  redPP: {fileID: 0}
+  purplePP: {fileID: 0}
+  cyanPP: {fileID: 0}
   i: 0
   speed: 5
   direction: 0
@@ -287,6 +290,8 @@ MonoBehaviour:
   whatIsGround:
     serializedVersion: 2
     m_Bits: 8
+  soundJump: {fileID: 1776974185256241210, guid: 0f850bbdf31f51c45b1a47b527ca9c85, type: 3}
+  soundWalk: {fileID: 0}
 --- !u!114 &6834113010905360413
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -301,3 +306,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   range: 100
   cam: {fileID: 4416951910496679373}
+--- !u!114 &2600443141012818448
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4416951911074446767}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 611bedb601d01294f8a1d395532edf94, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pauseMenuUI: {fileID: 0}

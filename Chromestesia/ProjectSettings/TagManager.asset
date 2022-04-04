@@ -11,6 +11,8 @@ TagManager:
   - GreenSphere
   - PurpleSphere
   - CyanSphere
+  - 5
+  - instruction
   layers:
   - Default
   - TransparentFX

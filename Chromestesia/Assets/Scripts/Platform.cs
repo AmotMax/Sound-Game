@@ -7,8 +7,10 @@ public class Platform : MonoBehaviour
     public GameObject player;
 
     public bool go;
-    public Transform target, origin;
+    public Transform origin, target;
     public float speed;
+
+
     // Start is called 
     // Start is called before the first frame update
     void Start()
@@ -28,6 +30,8 @@ public class Platform : MonoBehaviour
         {
             transform.position = Vector3.MoveTowards(transform.position, origin.position, speed * Time.deltaTime);
         }
+
+      
     }
 
     public void OnTriggerEnter(Collider other)

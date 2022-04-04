@@ -6,7 +6,9 @@ public class Cubes : MonoBehaviour
 {
    
 
-    public GameObject greenDoor, purplePlatform, toDestroy, toEnable;
+    public GameObject greenDoor, purplePlatform, toDestroy, toEnable, sound, particle;
+
+    
     // Start is called before the first frame update
     void Start()
     {
@@ -22,15 +24,27 @@ public class Cubes : MonoBehaviour
 
     void OnCollisionEnter(Collision other)
     {
+       
+      
+
         if (other.gameObject.tag == "GreenSphere")
         {
             greenDoor.GetComponent<GreenDoor>().go = true;
-
+            Instantiate(sound, transform.position, transform.rotation);
+            Instantiate(particle, transform.position, transform.rotation);
         }
 
-        if (other.gameObject.tag == "PurpleSphere")
+        if (other.gameObject.tag == "PurpleSphere" )
         {
+             Instantiate(sound, transform.position, transform.rotation);
+            
             purplePlatform.GetComponent<Platform>().go = !purplePlatform.GetComponent<Platform>().go;
+
+           
+            Instantiate(particle, transform.position, transform.rotation);
+
+
+
 
         }
 
@@ -38,6 +52,8 @@ public class Cubes : MonoBehaviour
         {
             toDestroy.SetActive(false);
             toEnable.SetActive(true);
+            Instantiate(sound, transform.position, transform.rotation);
+            Instantiate(particle, transform.position, transform.rotation);
 
         }
     }

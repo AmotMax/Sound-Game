@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class ActionLevier : MonoBehaviour
 {
-    public GameObject sphere, spawn;
+    public GameObject sphere, spawn, click;
     public Animation anim;
     
     // Start is called before the first frame update
@@ -22,6 +22,9 @@ public class ActionLevier : MonoBehaviour
     public void  Spawner()
     {
         Instantiate(sphere, spawn.transform.position, Quaternion.identity);
+        Instantiate(click, spawn.transform.position, Quaternion.identity);
+
+
         anim.Play();
     }
 }
