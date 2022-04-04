@@ -41,7 +41,7 @@ public class Cubes : MonoBehaviour
             purplePlatform.GetComponent<Platform>().go = !purplePlatform.GetComponent<Platform>().go;
 
            
-            Instantiate(particle, transform.position, transform.rotation);
+            Instantiate(particle, transform.position, transform.rotation);q
 
 
 
